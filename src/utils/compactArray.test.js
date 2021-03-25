@@ -5,6 +5,6 @@ it('should return a trimmed array', () => {
         .toEqual([2, 3]);
     
     expect(() => {compact('next Tinder date is handsome');})
-        .toEqual(TypeError);
+        .toThrow('we expect an array');
 });
 
